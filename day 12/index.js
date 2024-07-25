@@ -34,6 +34,7 @@ function task3(num) {
 		console.log("Error!", err);
 	} finally {
 		if (num < 0) console.log(num, "is a negative number");
+		console.log("Executed");
 	}
 }
 task3(2);
@@ -95,9 +96,10 @@ task7();
 
 // Activity 05
 //  - Task 08
+const API = "https://api.twatter.com";
 console.log("Fetching...");
 new Promise((resolve, reject) => {
-	fetch("https://api.twatter.com")
+	fetch(API)
 		.then((response) => {
 			return response.json();
 		})
@@ -106,13 +108,13 @@ new Promise((resolve, reject) => {
 });
 
 //  - Task 09
-async function task9(API) {
+async function task9(api) {
 	try {
-		let response = await fetch(API);
+		let response = await fetch(api);
 		let data = await response.json();
 		console.log(data);
 	} catch (err) {
 		console.log("Error!", err);
 	}
 }
-task9("https://api.twatter.com");
+task9(API);

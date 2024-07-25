@@ -49,26 +49,27 @@ promise_chain
 // Activity 03
 //  - Task 04
 async function task4() {
-	await new Promise((resolve) => {
+	let response = await new Promise((resolve) => {
 		setTimeout(() => {
-			console.log("Task 4 Completed");
+			resolve("Task 4 Completed");
 		}, 2000);
 	});
+	return response;
 }
 task4().then((response) => console.log(response));
 
 //  - Task 05
-let promise_3 = new Promise((_, reject) => {
-	setTimeout(() => {
-		reject("Promise has been rejected!");
-	}, 2000);
-});
 async function task5() {
 	try {
-		let promise = await promise_3;
-		console.log(promise);
-	} catch (error) {
-		console.log("Error:", error);
+		let response = await new Promise((_, reject) => {
+			setTimeout(() => {
+				reject("rejected");
+			}, 2000);
+		});
+
+		console.log(response);
+	} catch (err) {
+		console.log("Error!", err);
 	}
 }
 task5();
