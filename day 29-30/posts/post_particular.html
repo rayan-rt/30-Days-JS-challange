@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="./post.css" />
+
+        <!-- cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+        <!-- js -->
+        <script defer src="./post.js"></script>
+
+        <!-- icon -->
+        <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon">
+
+        <title>Post Feed</title>
+    </head>
+
+    <body>
+        <main>
+            <h2>Welcome <span id="loggedIn_user_name"></span></h2>
+
+            <article id="main_posts_container">
+
+                <!-- posts -->
+
+                <section>
+                    <p id="post_username">username</p>
+                    <p id="post_date">2024-08-11</p>
+                    <img src="../assets/logo.jpg" alt="post">
+                    <p id="post_caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam! Lorem
+                        ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, natus.</p>
+                    <div id="btns_container">
+                        <button class="transition_25"><i class="ri-heart-line"></i></button>
+                        <button class="transition_25"><i class="ri-chat-3-line"></i></button>
+                    </div>
+                    <div id="comments_container">
+                        <div>
+                            <p id="comment_username">username</p>
+                            <p id="comment">comment 1</p>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+        </main>
+    </body>
+
+</html>

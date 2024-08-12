@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: white;
+  background-color: black;
+}
+
+/* utilities */
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.transition_25 {
+  transition-duration: 0.25s;
+}
+
+#loggedIn_user_name {
+  color: rgb(250, 128, 148);
+}
+/* -- */
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main form {
+  height: 30%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 15px;
+  background-color: rgb(50, 50, 133);
+}
+
+main form input,
+button {
+  width: 25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+#input_image {
+  border: 1px solid rgb(250, 128, 148);
+  color: rgb(250, 128, 148);
+}
+
+main form button {
+  color: rgb(26, 26, 133);
+  background-color: rgb(250, 128, 148);
+  font-weight: 500;
+}
+
+/* pseudo */
+button:active {
+  scale: 0.9;
+}
+
+/* -- */
