@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+    background-color: black;
+    color: white;
+}
+/* -- */
+
+/* tag */
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+main section {
+    height: 75%;
+    width: 30%;
+    padding: 1rem;
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+main section p {
+    padding: 0.5rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: navy;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+main section .send {
+    align-self: flex-end;
+}
+
+main section .receive {
+    align-self: flex-start;
+}
+
+main form {
+    display: flex;
+    gap: 1rem;
+}
+
+form input {
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    background-color: salmon;
+}
+
+form button {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: navy;
+    color: white;
+}
+/* -- */
+
+/* id */
+/* -- */
+
+/* class */
+.transition_025 {
+    transition-duration: 0.25s;
+}
+/* -- */
+
+/* pseudo */
+button:active {
+    scale: 0.9;
+}
+/* -- */

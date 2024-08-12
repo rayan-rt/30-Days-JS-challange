@@ -1,0 +1,15 @@
+{
+  "name": "day-26-chat-app",
+  "version": "1.0.0",
+  "description": "Day 26 of JS 30 days Challange Chat App socket",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rayan",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
