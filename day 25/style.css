@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
+/* utilites */
+.transition_025 {
+    transition-duration: 0.25s;
+}
+/* -- */
+
+header {
+    padding: 2rem 0;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+header form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+header form input {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 25rem;
+}
+
+header form button {
+    cursor: pointer;
+    padding: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+main {
+    padding: 2rem 0;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+main section {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+img {
+    height: 15rem;
+    width: 15rem;
+}
+
+h3, p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* pseudo */
+button:active {
+    scale: 0.9;
+}
+
+input:focus-within {
+    box-shadow: 0 2px 8px 2px white;
+}
+
+main section:hover {
+    scale: 1.1;
+    box-shadow: 0 0 10px 3px black;
+}
+/* -- */
