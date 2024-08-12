@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+
+    background-color: black;
+    color: white;
+}
+
+/* utilities */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.transition_25 {
+    transition-duration: 0.25s;
+}
+/* -- */
+
+/* code */
+main {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    padding: 0.5rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid white;
+}
+
+header a {
+    padding: 0.5rem 0.8rem;
+    border-radius: 10px;
+    font: 300 1.2rem normal;
+    background-color: transparent;
+    text-align: center;
+}
+
+header #product_count {
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    background-color: coral;
+}
+
+article {
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 2rem;
+}
+
+article section {
+    height: 50vh;
+    width: 15vw;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    background-color: coral;
+}
+
+article section img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 10px;
+}
+
+article section #product_details {
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+article section #product_details #product_title_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article section #product_details #product_count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+article section #product_details #product_count button {
+    padding: 0.5rem;
+    width: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    background-color: navy;
+}
+
+article section button {
+    padding: 0.5rem;
+    width: 10rem;
+    border-radius: 10px;
+    color: white;
+    background-color: navy;
+}
+/* -- */
+
+/* pseudo */
+header a:hover {
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+section button:active {
+    scale: 0.9;
+}
+/* -- */
