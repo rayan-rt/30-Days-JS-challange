@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- css -->
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- js -->
+        <script defer src="./script.js"></script>
+
+        <!-- cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+        <!-- icon -->
+        <link rel="shortcut icon" href="./assets/weather-app-icon(1).webp" type="image/x-icon">
+
+        <title>Day 24 | Weather App</title>
+    </head>
+
+    <body>
+        <main>
+            <form id="form">
+                <input type="text" placeholder="Enter City" id="city_input" class="transition_025" required>
+                <button type="submit" class="transition_025">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+
+            <h3 id="city">
+                <span class="str"></span>
+                <span id="exact_city_name" class="blue">
+                </span>
+            </h3>
+
+            <article>
+                <div class="loader"></div>
+                <section id="current_day" class="main_sections">
+                    <!-- <section class="days">
+                        <p>10<sup>∘</sup> <span><i class="ri-cloud-line"></i></span></p>
+                        <p>Cloudy</p>
+                    </section>
+                    <p class="blue">Monday</p> -->
+                </section>
+                <section id="day_2" class="main_sections">
+                    <!-- <section class="days">
+                        <p>10<sup>∘</sup> <span><i class="ri-cloud-line"></i></span></p>
+                        <p>Cloudy</p>
+                    </section>
+                    <p>Thursday</p> -->
+                </section>
+                <section id="day_3" class="main_sections">
+                    <!-- <section class="days">
+                        <p>10<sup>∘</sup> <span><i class="ri-cloud-line"></i></span></p>
+                        <p>Cloudy</p>
+                    </section>
+                    <p>Friday</p> -->
+                </section>
+                <section id="day_4" class="main_sections">
+                    <!-- <section class="days">
+                        <p>10<sup>∘</sup> <span><i class="ri-cloud-line"></i></span></p>
+                        <p>Cloudy</p>
+                    </section>
+                    <p>Saturday</p> -->
+                </section>
+                <section id="day_5" class="main_sections">
+                    <!-- <section class="days">
+                        <p>10<sup>∘</sup> <span><i class="ri-cloud-line"></i></span></p>
+                        <p>Cloudy</p>
+                    </section>
+                    <p>Sunday</p> -->
+                </section>
+            </article>
+        </main>
+    </body>
+
+</html>
